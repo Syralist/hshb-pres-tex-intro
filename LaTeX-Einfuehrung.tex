@@ -1,0 +1,42 @@
+\documentclass{beamer}
+
+\usepackage[ngerman]{babel}
+\usepackage{selinput}
+\SelectInputMappings{%
+   adieresis={ä},
+   germandbls={ß},
+   Euro={€}
+   }
+
+\usetheme{Hannover}  %% Themenwahl
+
+\setbeamercovered{transparent}
+%\setbeamertemplate{footline}[frame number]
+ 
+\title{\LaTeX - Eine Einführung}
+\author{Thomas Helmke}
+\date{xx.12.2013}
+ 
+\begin{document}
+\maketitle
+\frame{\tableofcontents}
+ 
+\section{Was ist \LaTeX?}
+\begin{frame}[<+->] %%Eine Folie
+	\frametitle{Was ist \LaTeX?} %%Folientitel
+	\begin{itemize}
+		\item Textsatzsystem
+		\item Auszeichnungssprache (ähnlich wie HTML)
+		\item ...
+	\end{itemize}
+\end{frame}
+\begin{frame}[<+->] %%Eine Folie
+	\frametitle{Unterschied zu Word und Co.} %%Folientitel
+	\begin{itemize}
+		\item Form und Funktion getrennt
+		\item Dokument wird kompiliert
+		\item Erzeugt typographisch gute Seiten 
+	\end{itemize}
+\end{frame}
+
+\end{document}
