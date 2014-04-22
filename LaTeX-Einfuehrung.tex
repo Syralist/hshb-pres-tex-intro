@@ -50,14 +50,47 @@ escapeinside=||}
 	\frametitle{Kopf eines \LaTeX-Dokuments} %%Folientitel
 	\begin{lstlisting}
 	\documentclass{scrartcl}|\pause|
+	
 	\usepackage{selinput}
 	\SelectInputMappings{
 		   adieresis={|ä|},
 		   germandbls={|ß|}
-		   }
+		   }|\pause|
+		   
+	\usepackage[T1]{fontenc}
+	\usepackage{lmodern}|\pause|
+	
+	\usepackage[ngerman]{babel}
 	\end{lstlisting}
 \end{frame}
 \subsection{Titelei}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Die Titelei} %%Folientitel
+	\begin{lstlisting}
+	\subject{Vortrag}
+	\title{Beispiel Dokument}
+	\subtitle{Mit Untertitel}|\pause|
+	
+	\author{Thomas Helmke}
+	\date{2014-05-06}|\pause|
+	
+	\publishers{Hackerspace Bremen e.V.}
+	\end{lstlisting}
+\end{frame}
 \subsection{Struktur}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Struktur eines Dokuments} %%Folientitel
+	\begin{lstlisting}
+	\begin{document}|\pause|
+	
+	\maketitle|\pause|
+	
+	\section{Erster Abschnitt}
+	\subsection{Ein Unterabschnitt}
+	Text.|\pause|
+	
+	\end{document}
+	\end{lstlisting}
+\end{frame}
 
 \end{document}
