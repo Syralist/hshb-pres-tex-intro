@@ -1,12 +1,16 @@
 \documentclass{beamer}
 
+\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 \usepackage{selinput}
-\SelectInputMappings{%
+\SelectInputMappings{
    adieresis={ä},
-   germandbls={ß},
-   Euro={€}
+   germandbls={ß}
    }
+
+\usepackage{listings}
+\lstset{language=[LaTeX]TeX,
+escapeinside=||}
 
 \usetheme{Hannover}  %% Themenwahl
 
@@ -38,5 +42,22 @@
 		\item Erzeugt typographisch gute Seiten 
 	\end{itemize}
 \end{frame}
+
+\setbeamercovered{}
+\section{Aufbau eines Dokuments}
+\subsection{Kopf}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Kopf eines \LaTeX-Dokuments} %%Folientitel
+	\begin{lstlisting}
+	\documentclass{scrartcl}|\pause|
+	\usepackage{selinput}
+	\SelectInputMappings{
+		   adieresis={|ä|},
+		   germandbls={|ß|}
+		   }
+	\end{lstlisting}
+\end{frame}
+\subsection{Titelei}
+\subsection{Struktur}
 
 \end{document}
