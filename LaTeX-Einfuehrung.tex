@@ -16,10 +16,14 @@ escapeinside=||}
 
 \setbeamercovered{transparent}
 %\setbeamertemplate{footline}[frame number]
+\usecolortheme{spruce}		% grün
+\usecolortheme[named=MSUgreen]{structure}
+\newcommand{\hshblogo}{\includegraphics[width=1.3cm]{space-logo}}
  
-\title{\LaTeX - Eine Einführung}
+\title[\hshblogo]{\LaTeX - Eine Einführung}
 \author{Thomas Helmke}
-\date{xx.12.2013}
+\date{06.05.2014}
+\logo{\includegraphics{space-logo}}
  
 \begin{document}
 \maketitle
@@ -31,7 +35,7 @@ escapeinside=||}
 	\begin{itemize}
 		\item Textsatzsystem
 		\item Auszeichnungssprache (ähnlich wie HTML)
-		\item ...
+		\item Seitenaufbau nach typographischen Grundsätzen
 	\end{itemize}
 \end{frame}
 \begin{frame}[<+->] %%Eine Folie
@@ -39,7 +43,7 @@ escapeinside=||}
 	\begin{itemize}
 		\item Form und Funktion getrennt
 		\item Dokument wird kompiliert
-		\item Erzeugt typographisch gute Seiten 
+		\item What you see is what you mean.
 	\end{itemize}
 \end{frame}
 
