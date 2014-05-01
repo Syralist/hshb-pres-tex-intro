@@ -188,6 +188,7 @@ backgroundcolor=\color{Cornsilk}}
 	\frametitle{Graphik einbinden} %%Folientitel
 	\begin{itemize}[<+->]
 		\item Bilder als JPG, PNG, PDF
+		\item Paket \lstinline|graphicx|
 		\item Einfache Variante
 			\begin{lstlisting}
 			\includegraphics{bilddatei}
@@ -205,12 +206,53 @@ backgroundcolor=\color{Cornsilk}}
 \subsection{Tabellen}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Tabellen setzen} %%Folientitel
-	\begin{lstlisting}
-	\begin{tabular}{ccc}
-	a & b & c\\
-	d & e & f
-	\end{tabular}
-	\end{lstlisting}
+	\begin{itemize}[<+->]
+		\item Tabelle definieren
+			\begin{lstlisting}
+			\begin{tabular}{ccc}
+			a & b & c\\
+			d & e & f
+			\end{tabular}
+			\end{lstlisting}
+		\item Tabelle einbinden
+			\begin{lstlisting}
+			\begin{table}[htb]
+			\caption{Eine Tabelle}
+			\label{tab:tabelle1}
+			\begin{tabular}{ccc}
+			a & b & c\\
+			d & e & f
+			\end{tabular}
+			\end{table}
+			\end{lstlisting}
+	\end{itemize}
+\end{frame}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Tabellen formatieren} %%Folientitel
+	Einfach, aber hässlich
+		\begin{lstlisting}[escapeinside=@@]
+		\begin{tabular}{|c|c|c|}
+		\hline
+		a & b & c\\
+		\hline
+		d & e & f\\
+		\hline
+		\end{tabular}
+		\end{lstlisting}
+\end{frame}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Tabellen formatieren} %%Folientitel
+	Besser mit \lstinline|booktabs|
+		\begin{lstlisting}
+		\begin{tabular}{ccc}
+			\toprule
+			a & b & c\\
+			\midrule
+			d & e & f\\
+			g & h & i\\
+			\bottomrule
+		\end{tabular}
+		\end{lstlisting}
 \end{frame}
 \subsection{Verweise}
 \begin{frame}[fragile] %%Eine Folie
