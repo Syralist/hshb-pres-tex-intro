@@ -15,24 +15,30 @@ escapeinside=||,
 frame=single,
 backgroundcolor=\color{Cornsilk}}
 
-\usetheme{Hannover}  %% Themenwahl
+\usetheme{PaloAlto}  %% Themenwahl
 
 \setbeamercovered{transparent}
 %\setbeamertemplate{footline}[frame number]
 \usecolortheme{spruce}		% grün
 \usecolortheme[named=MSUgreen]{structure}
 \newcommand{\hshblogo}{\includegraphics[width=1.3cm]{space-logo}}
+\newcommand{\divider}[1]{\begin{frame} %
+\begin{alertblock}{} %
+\centering\usebeamerfont{section title}#1 %
+\end{alertblock} %
+\end{frame}}
  
-\title[\hshblogo]{\LaTeX - Eine Einführung}
+\title{\LaTeX - Eine Einführung}
 \author{Thomas Helmke}
 \date{06.05.2014}
-\logo{\includegraphics{space-logo}}
+\logo{\includegraphics[width=1.1cm]{space-logo}}
  
 \begin{document}
 \maketitle
 \frame{\tableofcontents}
  
 \section{Was ist \LaTeX?}
+\divider{\insertsection}
 \begin{frame}[<+->] %%Eine Folie
 	\frametitle{Was ist \LaTeX?} %%Folientitel
 	\begin{itemize}
@@ -53,15 +59,16 @@ backgroundcolor=\color{Cornsilk}}
 \setbeamercovered{}
 \section{Vor dem Schreiben}
 \subsection{Dokumenten\-klasse}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Dokumentenklasse} %%Folientitel
 	\begin{columns}
 	\column{.67\textwidth}
-		\begin{itemize}[<+->]
+		\begin{itemize}
 			\item Drei Grundklassen:
-			\begin{itemize}[<+->]
-				\item article \\(Aufsätze, wenige Abschnitte)
-				\item report \\(Berichte, mehrere Kapitel)
+			\begin{itemize}
+				\item article \\(Aufsätze, wenige Abschnitte)\pause
+				\item report \\(Berichte, mehrere Kapitel)\pause
 				\item book \\(Bücher, mehrteilig mit vielen Kapiteln)
 			\end{itemize}
 		\end{itemize}
@@ -87,6 +94,7 @@ backgroundcolor=\color{Cornsilk}}
 	\end{lstlisting}
 \end{frame}
 \subsection{Zeichensatz}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Zeichensätze} %%Folientitel
 	\begin{itemize}
@@ -105,6 +113,7 @@ backgroundcolor=\color{Cornsilk}}
 	\end{lstlisting}
 \end{frame}
 \subsection{Schriftart}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Schriftarten} %%Folientitel
 	\begin{itemize}
@@ -120,6 +129,7 @@ backgroundcolor=\color{Cornsilk}}
 	\end{lstlisting}
 \end{frame}
 \subsection{Sprache}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Sprachen} %%Folientitel
 	\begin{itemize}
@@ -135,6 +145,7 @@ backgroundcolor=\color{Cornsilk}}
 
 \section{Der erste Inhalt}
 \subsection{Titelei}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Die Titelei} %%Folientitel
 	\begin{lstlisting}
@@ -149,6 +160,7 @@ backgroundcolor=\color{Cornsilk}}
 	\end{lstlisting}
 \end{frame}
 \subsection{Struktur}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Struktur eines Dokuments} %%Folientitel
 	\begin{lstlisting}
@@ -184,6 +196,7 @@ backgroundcolor=\color{Cornsilk}}
 
 \section{Weitere Techniken}
 \subsection{Graphiken}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Graphik einbinden} %%Folientitel
 	\begin{itemize}[<+->]
@@ -204,6 +217,7 @@ backgroundcolor=\color{Cornsilk}}
 	\end{itemize}
 \end{frame}
 \subsection{Tabellen}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Tabellen setzen} %%Folientitel
 	\begin{itemize}[<+->]
@@ -255,6 +269,7 @@ backgroundcolor=\color{Cornsilk}}
 		\end{lstlisting}
 \end{frame}
 \subsection{Verweise}
+\divider{\insertsubsection}
 \begin{frame}[fragile] %%Eine Folie
 	\frametitle{Verweise} %%Folientitel
 	\begin{lstlisting}
