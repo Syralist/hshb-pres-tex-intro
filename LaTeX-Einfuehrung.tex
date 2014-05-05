@@ -295,5 +295,22 @@ backgroundcolor=\color{Cornsilk}}
 	\fref{sec:Kapitel1}
 	\end{lstlisting}
 \end{frame}
+\subsection{Quellcode}
+\divider{\insertsubsection}
+\begin{frame}[fragile] %%Eine Folie
+	\frametitle{Quellcode} %%Folientitel
+	\begin{lstlisting}
+	\usepackage{listings}
+	\lstset{language=[LaTeX]TeX,
+	escapeinside=||,
+	frame=single,
+	backgroundcolor=\color{Cornsilk}}|\pause|
+	
+	\begin{lstlisting}
+	\usepackage{listings}
+	...Quellcode steht hier...
+	\end|\{|lstlisting}
+	\end{lstlisting}
+\end{frame}
 
 \end{document}
