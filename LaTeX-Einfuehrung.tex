@@ -13,7 +13,18 @@
 \lstset{language=[LaTeX]TeX,
 escapeinside=||,
 frame=single,
-backgroundcolor=\color{Cornsilk}}
+backgroundcolor=\color{Cornsilk},
+literate={ä}{{\"a}}1
+		{ö}{{\"o}}1 
+		{ü}{{\"u}}1
+		{Ä}{{\"A}}1
+		{Ö}{{\"O}}1
+		{Ü}{{\"U}}1
+		{ß}{\ss}1
+		{”}{''}1
+		{“}{\grqq}1
+		{„}{\glqq}1
+}
 
 \usetheme{PaloAlto}  %% Themenwahl
 
@@ -107,8 +118,8 @@ backgroundcolor=\color{Cornsilk}}
 	\begin{lstlisting}
 	\usepackage{selinput}
 	\SelectInputMappings{
-		adieresis={|ä|},
-		germandbls={|ß|}
+		adieresis={ä},
+		germandbls={ß}
 		}
 	\end{lstlisting}
 \end{frame}
@@ -184,7 +195,7 @@ backgroundcolor=\color{Cornsilk}}
 	
 	\section{Erster Abschnitt}
 	\subsection{Ein Unterabschnitt}
-	Zeilenumbruch (b|ö|se):\\|\pause|
+	Zeilenumbruch (böse):\\|\pause|
 	Absatz:
 	
 	Getrennt durch Leerzeile.|\pause|
@@ -210,8 +221,8 @@ backgroundcolor=\color{Cornsilk}}
 			\begin{lstlisting}
 			\begin{figure}[htb]
 				\includegraphics{bilddatei}
-				\label{fig:Bild}
 				\caption{Ein Bild}
+				\label{fig:Bild}
 			\end{figure}
 			\end{lstlisting}
 	\end{itemize}
